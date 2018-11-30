@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='banner'>
+    <image src='{{banner}}' mode='scaleToFill'></image>
+  </view>
+  <form bindsubmit='formSubmit'>
+    <view class='userinfo ui-gird-a borderBottom'>
+      <label class='ui-block-a' for="jobNum">工号</label>
+      <input id='jobNum' type='jobNum' name='jobNum' class='ui-block-b' placeholder='请输入工号' />
+    </view>
+
+    <view class='userinfo ui-gird-a borderBottom'>
+      <label class='ui-block-a' for="mobile">手机号</label>
+      <input id='mobile' type='number' name='mobile' bindblur='getMobile' class='ui-block-b' placeholder='请输入手机号码' />
+    </view>
+
+    <view class='userinfo ui-gird-b'>
+      <label class='ui-block-a' for="identifyingCode">验证码</label>
+      <input id='identifyingCode' type='number' name='identifyingCode' class='ui-block-b' placeholder='请输入验证码' />
+      <button class='ui-block-c sendCode' bindtap='sendCode' >{{sendCode}}</button>
+    </view>
+
+    <view class='btn-area ui-gird-a'>
+      <button formType='submit' class='ui-block-a'>登陆</button>
+      <button formType='reset' class='ui-block-b'>重置</button>
+    </view>
+  </form>
+
+  <view class='bottom'>
+    <button bindtap='wxOneStepLogin'>一键微信登陆</button>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='banner'>
+    <image src='{{banner}}' mode='scaleToFill'></image>
+  </view>
+  <view class='info'>
+   <view>欢迎你</view>
+   <view class='jobNum'>{{jobNum}}</view>
+  </view>
+
+  <view class='bottom'>
+    <button bindtap='scanCode'>扫描二维码</button>
+  </view>
+</view>

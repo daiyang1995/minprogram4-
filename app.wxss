@@ -1,0 +1,25 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+} 
+.ui-gird-a,.ui-gird-b{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ui-gird-a .ui-block-a,.ui-gird-a .ui-block-b{
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.ui-gird-b .ui-block-a,.ui-gird-b .ui-block-b,.ui-gird-b .ui-block-c{
+  width: 33.3%;
+  display: inline-block;
+  box-sizing: border-box;
+}
